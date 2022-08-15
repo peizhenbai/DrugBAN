@@ -1,7 +1,7 @@
 # Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Paper](https://arxiv.org/abs/2208.02194)
 
 ## Introduction
-This repository contains the PyTorch [1] implementation of **DrugBAN** framework on drug-target interaction prediction. **DrugBAN** is a deep bilinear attention network (BAN) framework with adversarial domain adaptation to explicitly learn pair-wise local interactions between drugs and targets,
+This repository contains the PyTorch implementation of **DrugBAN** framework on drug-target interaction prediction. **DrugBAN** is a deep bilinear attention network (BAN) framework with adversarial domain adaptation to explicitly learn pair-wise local interactions between drugs and targets,
 and adapt on out-of-distribution data. It works on two-dimensional (2D) drug molecular graphs and target protein sequences to perform prediction.
 ## Framework
 ![DrugBAN](image/DrugBAN.jpg)
