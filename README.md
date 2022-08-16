@@ -48,7 +48,7 @@ In `datasets/bindingdb` and `datasets/biosnap` folders, we have full data with t
 In `datasets/human` folder, there is full data with random split for the in-domain experiment, and with cold split to alleviate ligand bias.
 
 ## Demo
-We provide DrugBAN running demo through a cloud Jupyter notebook on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb). Note it is based on a small sample of bindingdb dataset due to the resource limitation of a free colab account. This demo only takes 2 minutes to complete the training and testing process. For running DrugBAN on the full dataset, we advise GPU ram >= 8GB and CPU ram >= 16GB. Please refer the following instruction to run full training. 
+We provide DrugBAN running demo through a cloud Jupyter notebook on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb). Note it is based on a small sample of bindingdb dataset due to the resource limitation of a free colab account. This demo only takes 3 minutes to complete the training and testing process. For running DrugBAN on the full dataset, we advise GPU ram >= 8GB and CPU ram >= 16GB. Please refer the following instruction to run full training. 
 
 
 ## Run DrugBAN Method
