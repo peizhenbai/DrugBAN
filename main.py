@@ -29,7 +29,7 @@ args = parser.parse_args()
 
 def main():
     torch.cuda.empty_cache()
-    warnings.filterwarnings("ignore", message="invalid value encountered in true_divide")
+    warnings.filterwarnings("ignore", message="invalid value encountered in divide")
     cfg = get_cfg_defaults()
     cfg.merge_from_file(args.cfg)
     set_seed(cfg.SOLVER.SEED)
