@@ -6,7 +6,7 @@ and adapt on out-of-distribution data. It works on two-dimensional (2D) drug mol
 ## Framework
 ![DrugBAN](image/DrugBAN.jpg)
 ## System Requirements
-The source code developed in Python 3.8 using PyTorch 1.8.1. The required python dependencies are given below. DrugBAN is suuported for any standard computer with enough RAM to run.
+The source code developed in Python 3.8 using PyTorch 1.8.1. The required python dependencies are given below. DrugBAN is supported for any standard computer and operating systems (Windows/macOS/Linux) with enough RAM to run. There is no additional non-standard hardware requirements.
 
 ```
 torch>=1.8.1
@@ -21,7 +21,7 @@ yacs~=0.1.8
 comet-ml~=3.23.1 # optional
 ```
 ## Installation Guide
-Clone this github repo and set up a new conda environment. It normally takes about 10 minutes to install.
+Clone this github repo and set up a new conda environment. It normally takes about 10 minutes to install on a normal desktop computer.
 ```
 # create a new conda environment
 $ conda create --name drugban python=3.8
@@ -48,10 +48,12 @@ In `datasets/bindingdb` and `datasets/biosnap` folders, we have full data with t
 In `datasets/human` folder, there is full data with random split for the in-domain experiment, and with cold split to alleviate ligand bias.
 
 ## Demo
-We provide DrugBAN running demo through a cloud Jupyter notebook on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb). Note it is based on a small sample of bindingdb dataset due to the resource limitation of a free colab account. This demo only takes 3 minutes to complete the training and testing process. For running DrugBAN on the full dataset, we advise GPU ram >= 8GB and CPU ram >= 16GB. Please refer the following instruction to run full training. 
+We provide DrugBAN running demo through a cloud Jupyter notebook on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb). Note it is based on a small sample dataset of bindingdb due to the resource limitation of a free colab account. This demo only takes 3 minutes to complete the training and testing process. For running DrugBAN on the full dataset, we advise GPU ram >= 8GB and CPU ram >= 16GB.
+
+The **expected output and run time** of demo has been provided in the colab notebook for verification.
 
 
-## Run DrugBAN Method
+## Run DrugBan on Our Data to Reproduce Results
 
 To train DrugBAN, where we provide the basic configurations for all hyperparameters in `config.py`. For different in-domain and cross-domain tasks, the customized task configurations can be found in respective `configs/*.yaml` files.
 
