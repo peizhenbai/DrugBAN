@@ -1,4 +1,4 @@
-# Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Paper](https://arxiv.org/abs/2208.02194)
+# Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Demo](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
 
 ## Introduction
 This repository contains the PyTorch implementation of **DrugBAN** framework on drug-target interaction prediction. **DrugBAN** is a deep bilinear attention network (BAN) framework with adversarial domain adaptation to explicitly learn pair-wise local interactions between drugs and targets,
@@ -6,7 +6,7 @@ and adapt on out-of-distribution data. It works on two-dimensional (2D) drug mol
 ## Framework
 ![DrugBAN](image/DrugBAN.jpg)
 ## System Requirements
-The source code developed in Python 3.8 using PyTorch 1.8.1. The required python dependencies are given below. `DrugBAN` is suuported for any standard computer with enough RAM to run.
+The source code developed in Python 3.8 using PyTorch 1.8.1. The required python dependencies are given below. DrugBAN is suuported for any standard computer with enough RAM to run.
 
 ```
 torch>=1.8.1
@@ -43,11 +43,15 @@ $ cd DrugBAN
 
 
 ## Datasets
-The `datasets` folder contains all experimental data used in DrugBAN: BindingDB, BioSNAP and Human. 
+The `datasets` folder contains all experimental data used in DrugBAN: [BindingDB](https://www.bindingdb.org/bind/index.jsp) [1], [BioSNAP](https://github.com/kexinhuang12345/MolTrans) [2] and [Human](https://github.com/lifanchen-simm/transformerCPI) [3]. 
 In `datasets/bindingdb` and `datasets/biosnap` folders, we have full data with two random and clustering-based splits for both in-domain and cross-domain experiments.
 In `datasets/human` folder, there is full data with random split for the in-domain experiment, and with cold split to alleviate ligand bias.
 
-## Model Training
+## Demo
+We provide DrugBAN running demo through a cloud Jupyter notebook on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb). Note it is based on a small sample of bindingdb dataset due to the resource limitation of a free colab account. This demo only takes 2 minutes to complete the training and testing process. For running DrugBAN on the full dataset, we advise GPU ram >= 8GB and CPU ram >= 16GB. Please refer the following instruction to run. 
+
+
+## Run DrugBAN Method
 
 To train DrugBAN, where we provide the basic configurations for all hyperparameters in `config.py`. For different in-domain and cross-domain tasks, the customized task configurations can be found in respective `configs/*.yaml` files.
 
@@ -85,8 +89,10 @@ api_key=YOUR-API-KEY
 
 For more details, please refer the [official documentation](https://www.comet.com/docs/python-sdk/advanced/).
 
+## Acknowledgements
+
 ## Citation
-Please cite our paper if you find our work useful in your own research.
+Please cite our [paper](ttps://arxiv.org/abs/2208.02194) if you find our work useful in your own research.
 ```
     @article{drugban,
       title   = {Interpretable bilinear attention network with domain adaptation improves drug-target prediction},
@@ -95,3 +101,8 @@ Please cite our paper if you find our work useful in your own research.
       year    = {2022}
     }
 ```
+
+## References
+    [1] Liu, T., Lin, Y., Wen, X., Jorissen, R. N., & Gilson, M. K. (2007). BindingDB: a web-accessible database of experimentally determined protein–ligand binding affinities. Nucleic acids research, 35(suppl_1), D198-D201.
+    [2] Huang, K., Xiao, C., Glass, L. M., & Sun, J. (2021). MolTrans: Molecular Interaction Transformer for drug–target interaction prediction. Bioinformatics, 37(6), 830-836.
+    [3] Chen, L., Tan, X., Wang, D., Zhong, F., Liu, X., Yang, T., ... & Zheng, M. (2020). TransformerCPI: improving compound–protein interaction prediction by sequence-based deep learning with self-attention mechanism and label reversal experiments. Bioinformatics, 36(16), 4406-4414.
