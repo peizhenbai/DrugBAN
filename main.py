@@ -36,8 +36,9 @@ def main():
     suffix = str(int(time() * 1000))[6:]
     mkdir(cfg.RESULT.OUTPUT_DIR)
     experiment = None
-    print(f"Result dir: {cfg.RESULT.OUTPUT_DIR}")
     print(f"Config yaml: {args.cfg}")
+    print(f"Hyperparameters: {dict(cfg)}")
+    print(f"Running on: {device}", end="\n\n")
 
     dataFolder = f'./datasets/{args.data}'
     dataFolder = os.path.join(dataFolder, str(args.split))
@@ -149,6 +150,9 @@ def main():
     with open(os.path.join(cfg.RESULT.OUTPUT_DIR, "model_architecture.txt"), "w") as wf:
         wf.write(str(model))
 
+    print()
+    print(f"Directory for saving result: {cfg.RESULT.OUTPUT_DIR}")
+
     return result
 
 
@@ -156,4 +160,4 @@ if __name__ == '__main__':
     s = time()
     result = main()
     e = time()
-    print(f"Total time: {e - s}")
+    print(f"Total running time: {round(e - s, 2)}s")
