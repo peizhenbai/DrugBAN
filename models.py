@@ -6,8 +6,6 @@ from dgllife.model.gnn import GCN
 from ban import BANLayer
 from torch.nn.utils.weight_norm import weight_norm
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
 
 def binary_cross_entropy(pred_output, labels):
     loss_fct = torch.nn.BCELoss()

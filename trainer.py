@@ -7,6 +7,7 @@ from sklearn.metrics import roc_auc_score, average_precision_score, roc_curve, c
 from models import binary_cross_entropy, cross_entropy_logits, entropy_logits, RandomLayer
 from prettytable import PrettyTable
 from domain_adaptator import ReverseLayerF
+from tqdm import tqdm
 
 
 class Trainer(object):
@@ -36,7 +37,8 @@ class Trainer(object):
                     param.requires_grad = False
             elif config["DA"]["RANDOM_LAYER"] and config["DA"]["ORIGINAL_RANDOM"]:
                 self.random_layer = RandomLayer([config["DECODER"]["IN_DIM"], self.n_class], config["DA"]["RANDOM_DIM"])
-                self.random_layer.cuda()
+                if torch.cuda.is_available():
+                    self.random_layer.cuda()
             else:
                 self.random_layer = False
         self.da_init_epoch = config["DA"]["INIT_EPOCH"]
@@ -186,7 +188,7 @@ class Trainer(object):
         self.model.train()
         loss_epoch = 0
         num_batches = len(self.train_dataloader)
-        for i, (v_d, v_p, labels) in enumerate(self.train_dataloader):
+        for i, (v_d, v_p, labels) in enumerate(tqdm(self.train_dataloader)):
             self.step += 1
             v_d, v_p, labels = v_d.to(self.device), v_p.to(self.device), labels.float().to(self.device)
             self.optim.zero_grad()
