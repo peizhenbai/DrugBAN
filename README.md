@@ -1,28 +1,11 @@
-# Interpretable bilinear attention network with domain adaptation improves drug-target prediction
+# Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Demo](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
 
-<!-- markdownlint-disable -->
-<table align="center">
-    <tr>
-        <td align="left">
-            <b>Paper</b>
-        </td>
-        <td align="center">
-            <a href="https://arxiv.org/abs/2208.02194">
-                <img src="https://img.shields.io/badge/arXiv-2208.02194-<COLOR>.svg" alt="Code quality">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <td align="left">
-            <b>Demo</b>
-        </td>
-        <td align="center">
-            <a href="https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb">
-                <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Google Colab">
-            </a>
-        </td>
-    </tr>
-</table>
+<div align="center">
+
+[![arXiv](https://img.shields.io/badge/arXiv-2208.02194-<COLOR>.svg)](https://arxiv.org/abs/2208.02194)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
+
+</div>
 
 ## Introduction
 This repository contains the PyTorch implementation of **DrugBAN** framework on drug-target interaction prediction. **DrugBAN** is a deep bilinear attention network (BAN) framework with adversarial domain adaptation to explicitly learn pair-wise local interactions between drugs and targets,
