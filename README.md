@@ -1,4 +1,28 @@
-# Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Demo](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
+# Interpretable bilinear attention network with domain adaptation improves drug-target prediction
+
+<!-- markdownlint-disable -->
+<table align="center">
+    <tr>
+        <td align="left">
+            <b>Paper</b>
+        </td>
+        <td align="center">
+            <a href="https://arxiv.org/abs/2208.02194">
+                <img src="https://img.shields.io/badge/arXiv-2208.02194-<COLOR>.svg" alt="Code quality">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+            <b>Demo</b>
+        </td>
+        <td align="center">
+            <a href="https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb">
+                <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Google Colab">
+            </a>
+        </td>
+    </tr>
+</table>
 
 ## Introduction
 This repository contains the PyTorch implementation of **DrugBAN** framework on drug-target interaction prediction. **DrugBAN** is a deep bilinear attention network (BAN) framework with adversarial domain adaptation to explicitly learn pair-wise local interactions between drugs and targets,
@@ -6,7 +30,7 @@ and adapt on out-of-distribution data. It works on two-dimensional (2D) drug mol
 ## Framework
 ![DrugBAN](image/DrugBAN.jpg)
 ## System Requirements
-The source code developed in Python 3.8 using PyTorch 1.8.1. The required python dependencies are given below. DrugBAN is supported for any standard computer and operating systems (Windows/macOS/Linux) with enough RAM to run. There is no additional non-standard hardware requirements.
+The source code developed in Python 3.8 using PyTorch 1.8.1. The required python dependencies are given below. DrugBAN is supported for any standard computer and operating system (Windows/macOS/Linux) with enough RAM to run. There is no additional non-standard hardware requirements.
 
 ```
 torch>=1.8.1
@@ -95,7 +119,7 @@ For more details, please refer the [official documentation](https://www.comet.co
 This implementation is inspired and partially based on earlier works [2], [4] and [5].
 
 ## Citation
-Please cite our [paper](ttps://arxiv.org/abs/2208.02194) if you find our work useful in your own research.
+Please cite our [paper](https://arxiv.org/abs/2208.02194) if you find our work useful in your own research.
 ```
     @article{drugban,
       title   = {Interpretable bilinear attention network with domain adaptation improves drug-target prediction},
