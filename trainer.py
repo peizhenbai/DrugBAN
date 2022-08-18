@@ -218,7 +218,7 @@ class Trainer(object):
             if self.experiment:
                 self.experiment.log_metric("DA loss lambda", epoch_lamb_da, epoch=self.current_epoch)
         num_batches = len(self.train_dataloader)
-        for i, (batch_s, batch_t) in enumerate(self.train_dataloader):
+        for i, (batch_s, batch_t) in enumerate(tqdm(self.train_dataloader)):
             self.step += 1
             v_d, v_p, labels = batch_s[0].to(self.device), batch_s[1].to(self.device), batch_s[2].float().to(
                 self.device)
