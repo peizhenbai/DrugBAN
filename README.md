@@ -4,6 +4,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2208.02194-<COLOR>.svg)](https://arxiv.org/abs/2208.02194)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
+[![DOI](https://zenodo.org/badge/519562997.svg)](https://zenodo.org/badge/latestdoi/519562997)
 
 </div>
 
