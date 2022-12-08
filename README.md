@@ -14,7 +14,7 @@ and adapt on out-of-distribution data. It works on two-dimensional (2D) drug mol
 ## Framework
 ![DrugBAN](image/DrugBAN.jpg)
 ## System Requirements
-The source code developed in Python 3.8 using PyTorch 1.8.1. The required python dependencies are given below. DrugBAN is supported for any standard computer and operating system (Windows/macOS/Linux) with enough RAM to run. There is no additional non-standard hardware requirements.
+The source code developed in Python 3.8 using PyTorch 1.7.1. The required python dependencies are given below. DrugBAN is supported for any standard computer and operating system (Windows/macOS/Linux) with enough RAM to run. There is no additional non-standard hardware requirements.
 
 ```
 torch>=1.7.1
