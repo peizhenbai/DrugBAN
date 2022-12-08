@@ -17,7 +17,7 @@ and adapt on out-of-distribution data. It works on two-dimensional (2D) drug mol
 The source code developed in Python 3.8 using PyTorch 1.8.1. The required python dependencies are given below. DrugBAN is supported for any standard computer and operating system (Windows/macOS/Linux) with enough RAM to run. There is no additional non-standard hardware requirements.
 
 ```
-torch>=1.8.1
+torch>=1.7.1
 dgl>=0.7.1
 dgllife>=0.2.8
 numpy>=1.20.2
@@ -36,7 +36,7 @@ $ conda create --name drugban python=3.8
 $ conda activate drugban
 
 # install requried python dependencies
-$ conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.2 -c pytorch
+$ conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.2 -c pytorch
 $ conda install -c dglteam dgl-cuda10.2==0.7.1
 $ conda install -c conda-forge rdkit==2021.03.2
 $ pip install dgllife==0.2.8
