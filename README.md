@@ -1,4 +1,4 @@
-# Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Paper](https://doi.org/10.1038/s42256-022-00605-1) | [Demo](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
+# Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Paper](https://doi.org/10.1038/s42256-022-00605-1)
 
 <div align="left">
 
