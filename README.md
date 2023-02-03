@@ -1,15 +1,15 @@
-# Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Demo](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
+# Interpretable bilinear attention network with domain adaptation improves drug-target prediction | [Paper](https://doi.org/10.1038/s42256-022-00605-1) | [Demo](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
 
 <div align="left">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2208.02194-<COLOR>.svg)](https://arxiv.org/abs/2208.02194)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pz-white/DrugBAN/blob/main/drugban_demo.ipynb)
-[![DOI](https://zenodo.org/badge/519562997.svg)](https://zenodo.org/badge/latestdoi/519562997)
-
+[![DOI:10.1038/s42256-022-00605-1](https://zenodo.org/badge/DOI/10.1038/s42256-022-00605-1.svg)](https://doi.org/10.1038/s42256-022-00605-1)
+[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/peizhenbai/DrugBAN/blob/main/LICENSE.md)
 </div>
 
+
 ## Introduction
-This repository contains the PyTorch implementation of **DrugBAN** framework on drug-target interaction prediction. **DrugBAN** is a deep bilinear attention network (BAN) framework with adversarial domain adaptation to explicitly learn pair-wise local interactions between drugs and targets,
+This repository contains the PyTorch implementation of **DrugBAN** framework, as described in our *Nature Machine Intelligence* paper "[Interpretable bilinear attention network with domain adaptation improves drug–target prediction](https://doi.org/10.1038/s42256-022-00605-1)".  **DrugBAN** is a deep bilinear attention network (BAN) framework with adversarial domain adaptation to explicitly learn pair-wise local interactions between drugs and targets,
 and adapt on out-of-distribution data. It works on two-dimensional (2D) drug molecular graphs and target protein sequences to perform prediction.
 ## Framework
 ![DrugBAN](image/DrugBAN.jpg)
@@ -29,7 +29,7 @@ yacs~=0.1.8
 comet-ml~=3.23.1 # optional
 ```
 ## Installation Guide
-Clone this github repo and set up a new conda environment. It normally takes about 10 minutes to install on a normal desktop computer.
+Clone this Github repo and set up a new conda environment. It normally takes about 10 minutes to install on a normal desktop computer.
 ```
 # create a new conda environment
 $ conda create --name drugban python=3.8
@@ -105,11 +105,13 @@ This implementation is inspired and partially based on earlier works [2], [4] an
 ## Citation
 Please cite our [paper](https://arxiv.org/abs/2208.02194) if you find our work useful in your own research.
 ```
-    @article{drugban,
+    @article{bai2023drugban,
       title   = {Interpretable bilinear attention network with domain adaptation improves drug-target prediction},
       author  = {Peizhen Bai and Filip Miljkovi{\'c} and Bino John and Haiping Lu},
-      journal = {arXiv:2208.02194 [cs.LG]},
-      year    = {2022}
+      journal = {Nature Machine Intelligence},
+      year    = {2023},
+      publisher={Nature Publishing Group},
+      doi     = {10.1038/s42256-022-00605-1}
     }
 ```
 
