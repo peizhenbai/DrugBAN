@@ -14,8 +14,7 @@ from trainer import Trainer
 from domain_adaptator import Discriminator
 import torch
 import argparse
-import warnings, os
-import pandas as pd
+
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
